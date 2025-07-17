@@ -1,0 +1,26 @@
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.glitch-text {
+  font-size: 20vw; /* يجعلها بعرض الصفحة */
+  color: rgba(0, 0, 0, 0.1); /* شفافه شويه */
+  margin: 0;
+}
+
+.phone {
+  font-size: 1.5rem;
+  color: #000000;
+}
