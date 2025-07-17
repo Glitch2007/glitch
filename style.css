@@ -1,26 +1,32 @@
 body {
-  background-color: #ffffff;
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  background: #fff;
+  color: #000;
+  font-family: Arial, sans-serif;
   text-align: center;
+  padding-top: 50px;
 }
 
-.container {
-  width: 100%;
-}
-
-.glitch-text {
-  font-size: 20vw; /* يجعلها بعرض الصفحة */
-  color: rgba(0, 0, 0, 0.1); /* شفافه شويه */
+.title {
+  font-size: 10vw;
+  color: rgba(0, 0, 0, 0.1);
   margin: 0;
 }
 
-.phone {
+.subtitle {
   font-size: 1.5rem;
-  color: #000000;
+  margin-bottom: 2rem;
+}
+
+.controls {
+  margin-bottom: 2rem;
+}
+
+select, button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+}
+
+.status {
+  font-weight: bold;
 }
