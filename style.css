@@ -1,32 +1,19 @@
+
 body {
-  background: #fff;
-  color: #000;
-  font-family: Arial, sans-serif;
+  background-color: white;
+  font-family: sans-serif;
   text-align: center;
-  padding-top: 50px;
+  margin-top: 100px;
 }
-
 .title {
-  font-size: 10vw;
+  font-size: 80px;
   color: rgba(0, 0, 0, 0.1);
-  margin: 0;
+  position: absolute;
+  top: 20%;
+  width: 100%;
 }
-
-.subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.controls {
-  margin-bottom: 2rem;
-}
-
-select, button {
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem;
-}
-
-.status {
-  font-weight: bold;
+button {
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px 20px;
 }

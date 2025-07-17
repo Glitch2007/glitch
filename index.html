@@ -1,26 +1,16 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Glitch PSFree</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Glitch</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1 class="title">Glitch</h1>
-  <p class="subtitle">PS4 Jailbreak Host</p>
-
-  <div class="controls">
-    <label for="payloadSelect">Choose Payload:</label>
-    <select id="payloadSelect">
-      <option value="goldhen.bin">GoldHEN</option>
-      <option value="ftp.bin">FTP Server</option>
-      <option value="linux.bin">Linux Loader</option>
-    </select>
-    <button onclick="sendPayload()">Launch Payload</button>
-  </div>
-
-  <p class="status" id="status">Ready.</p>
+  <p>اختر إصدار جهازك لتشغيل GoldHEN:</p>
+  <button onclick="sendPayload('900')">GoldHEN 9.00</button>
+  <button onclick="sendPayload('960')">GoldHEN 9.60</button>
 
   <script src="payloadSender.js"></script>
 </body>

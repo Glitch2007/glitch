@@ -1,19 +1,15 @@
-function sendPayload() {
-  const payload = document.getElementById("payloadSelect").value;
-  const status = document.getElementById("status");
 
-  status.innerText = "Sending " + payload + "...";
-
-  fetch(payload)
-    .then(r => r.arrayBuffer())
-    .then(data => {
-      // placeholder: simulate sending payload
-      setTimeout(() => {
-        status.innerText = "Payload sent successfully!";
-      }, 1000);
-    })
-    .catch(err => {
-      status.innerText = "Error sending payload.";
-      console.error(err);
-    });
+function sendPayload(version) {
+  const xhr = new XMLHttpRequest();
+  let file = version === '900' ? 'GoldHEN_2.4b18_900.bin' : 'GoldHEN_2.4b18_960.bin';
+  xhr.open('GET', file, true);
+  xhr.responseType = 'arraybuffer';
+  xhr.onload = function () {
+    if (xhr.status === 200) {
+      alert('Payload Sent: ' + file);
+    } else {
+      alert('Failed to load payload.');
+    }
+  };
+  xhr.send();
 }
